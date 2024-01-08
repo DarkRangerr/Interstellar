@@ -38,6 +38,20 @@ document.addEventListener('DOMContentLoaded', () => {
       error: false
     },
     {
+      name: "Snow Rider 3D",
+      link: "https://html5.gamedistribution.com/rvvASMiM/3b79a8537ebc414fb4f9672a9b8c68c8/index.html?gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3Nub3dyaWRlcjNkLmNvbS8iLCJwYXJlbnREb21haW4iOiJzbm93cmlkZXIzZC5jb20iLCJ0b3BEb21haW4iOiJzbm93cmlkZXIzZC5jb20iLCJoYXNJbXByZXNzaW9uIjpmYWxzZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xNiJ9",
+      image: "/assets/media/icons/snowrider3d.jpg",
+      categories: ["all"],
+      error: false
+    },
+    {
+      name: "3 Slices",
+      link: "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://rb.y2.ee/3slices/3slices.xml?v=1",
+      image: "/assets/media/icons/3slices.jpg",
+      categories: ["all"],
+      error: false
+    },
+    {
       name: "ev.io",
       link: "https://ev.io",
       image: "/assets/media/icons/evio.jpg",
@@ -73,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       name: "Stickman Hook",
-      link: "/edu/stickman-hook/index.html",
+      link: "/y/stickman-hook/index.html",
       image: "/assets/media/icons/stickmanhook.jpg",
       categories: ['all', 'local'],
       local: "true"
@@ -171,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       name: "Jetpack Joyride",
-      link: "/edu/jetpack-joyride/index.html",
+      link: "/y/jetpack-joyride/index.html",
       image: "/assets/media/icons/jetpackjoyride.png",
       categories: ['all', 'local'],
       local: "true"
@@ -689,7 +703,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       name: "Cluster Rush",
-      link: "/edu/Cluster-Rush/index.html",
+      link: "/y/Cluster-Rush/index.html",
       image: "/assets/media/icons/cluster-rush.webp",
       categories: ["all", 'local'],
       local: "true"
@@ -976,7 +990,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },  
       {
         name: "Monkey Mart",
-        link: "/edu/monkey-mart/index.html",
+        link: "/y/monkey-mart/index.html",
         image: "/assets/media/icons/mm.webp",
         categories: ['all', 'local'],
         local: "true"
@@ -1438,7 +1452,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       name: "Retro Bowl",
-      link: "/edu/retro/index.html",
+      link: "/y/retro/index.html",
       image: "/assets/media/icons/retro.webp",
       categories: ["all,", 'sports', 'local'],
       local: "true",
@@ -1521,7 +1535,7 @@ document.addEventListener('DOMContentLoaded', () => {
           alert(app.say);
         }
         saveToLocal(app.link);
-        window.location.href = '/edu.html';
+        window.location.href = '/w';
         return false;
       };
     } else if (app.blank) {
@@ -1609,7 +1623,7 @@ function pinContains(i,p) {
   return false;
 }
 
-function showImages() {
+function show_category() {
   var selectedCategories = Array.from(document.querySelectorAll("#category option:checked")).map(option => option.value);
   var games = document.getElementsByClassName("column");
 
@@ -1625,7 +1639,7 @@ function showImages() {
   }
 }
 
-function search_game() {
+function search_bar() {
   var input = document.getElementById("searchbarbottom");
   var filter = input.value.toLowerCase();
   var games = document.getElementsByClassName("column");
